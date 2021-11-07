@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --ft-family: "Big Shoulders Display";
+  --font-family: "Lexend Deca", sans-serif;
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+body,
+button {
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+.container {
+  padding: 20px;
+}
+.card {
+  padding: 30px;
+}
+.card img {
+  margin-bottom: 30px;
+}
+.card p {
+  margin-bottom: 30px;
+}
+.card h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: var(--ft-family);
+  margin-bottom: 20px;
+}
+.card p {
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.sedans {
+  background: var(--bright-orange);
+  border-radius: 10px 10px 0 0;
+}
+.suvs {
+  background: var(--dark-cyan);
+}
+.luxury {
+  background: var(--very-dark-cyan);
+  border-radius: 0 0 10px 10px;
+}
+
+button {
+  background: hsl(0, 0%, 95%);
+  font-family: var(--font-family);
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 0;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid #fff;
+}
+button:hover {
+  background-color: transparent;
+  color: white;
+}
+.attribution {
+  text-align: center;
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 990px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .card {
+    padding: 45px;
+  }
+  .card p {
+    margin-bottom: 50px;
+  }
+
+  .sedans {
+    border-radius: 10px 0 0 10px;
+  }
+  .luxury {
+    border-radius: 0 10px 10px 0;
+  }
+}
